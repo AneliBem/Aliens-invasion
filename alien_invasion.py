@@ -1,5 +1,5 @@
 import sys 
-import pygame
+import pygame # pip/pip3 install pygame
 
 from settings import Settings
 from ship import Ship
