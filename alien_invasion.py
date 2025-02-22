@@ -31,13 +31,17 @@ class AlienInvasion:
         while True:
             self._check_events()
             self.ship.update()
-            self.bullets.update()
-            
-            for bullet in self.bullets.copy():
-                if bullet.rect.bottom <= 0:
-                    self.bullets.remove(bullet)
+            self._update_bullets()
+            self._update_screen()        
 
-            self._update_screen()
+    def _update_bullets(self):
+        
+        self.bullets.update()
+        
+        for bullet in self.bullets.copy():
+            if bullet.rect.bottom <= 0:
+                self.bullets.remove(bullet)
+
 
     def _check_events(self): 
         for event in pygame.event.get():
