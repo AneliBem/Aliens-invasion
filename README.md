@@ -2,9 +2,9 @@
 
 ## Moving 
 
-- left '<-'
-- right '->'
-- fire 'space'
-- quit 'q'
+- left ' ← '
+- right ' → '
+- fire 'Space'
+- quit 'Q'
 
 
